@@ -387,10 +387,6 @@ body{
     margin-top: 16px;
 }
 
-.footer-icons-container{
-    margin-right: 80px;
-}
-
 .footer-icons-item{
     font-weight: 600;
     font-size: 16px;
@@ -422,6 +418,9 @@ body{
     background-color: var(--color-green);
 }
 
+.footer-subscribe-section{
+    margin-left: auto;
+}
 .footer-subscribe-title {
     font-weight: 500;
     font-size: 16px;
@@ -464,12 +463,8 @@ body{
     border: 1px solid red;
 }
 
-.button-container{
-    position: relative;
-}
-
 .footer-subscribe-button {
-    padding: 8px 64px 8px 24px;
+    padding: 8px 24px 8px 24px;
     background-color: #4D5AE5;
     border-radius: 4px;
     border: none;
@@ -481,6 +476,10 @@ body{
     transition: background-color var(--tra), box-shadow var(--tra);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-subscribe-button:hover,
@@ -490,9 +489,6 @@ body{
 }
 
 .subscribe-button-icon{
-    position: absolute;
-    right: 24px;
-    top: 8px;
     pointer-events: none;
 }
 /*---------------   MODAL  ----------------- */
@@ -515,15 +511,13 @@ body{
 
 .modal{
     width: 408px;
-    height: 576px;
-    background-color: #FFFFFF;
     position: relative;
     top: 50%;
     left: 50%;
     border-radius: 4px;
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--tra);
-    padding: 20px;
+    padding: 72px 24px 24px;
     background-color: #FCFCFC;
 }
 
@@ -563,9 +557,8 @@ body{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-navy-blue);
-    width: 360px;
     text-align: center;
-    padding: 52px 0 16px;
+    margin-bottom: 16px;
 }
 .modal-label{
     font-weight: 400;
@@ -573,9 +566,12 @@ body{
     line-height: 1.33;
     letter-spacing: 0.04em;
     color: var(--color-light-slate);
+    margin-bottom: 4px;
+    display: block;
 }
 .modal-input-container{
     position: relative;
+    margin-bottom: 8px;
 }
 .modal-input-icon{
     position: absolute;
@@ -597,7 +593,6 @@ body{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-navy-blue);
-    margin-bottom: 8px;
     background-color:transparent
 }
 .modal-input:focus {
@@ -683,11 +678,13 @@ body{
 .privacy-link{
     text-decoration-line: underline;
     color: var(--color-iris);
+    margin-left: 5px;
 }
 .modal-button{
     width: 169px;
     height: 56px;
-    margin-left: calc((100% - 169px) / 2);
+    margin:0 auto;
+    display: block;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
